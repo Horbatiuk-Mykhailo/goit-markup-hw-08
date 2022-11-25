@@ -1,0 +1,35 @@
+.form__email {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: white;
+  background-color: transparent;
+  transition-property: border;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transtition-timing-function);
+
+  @media screen and (min-width: $tablet) {
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 358px;
+    max-width: 358px;
+    display: inline;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+}

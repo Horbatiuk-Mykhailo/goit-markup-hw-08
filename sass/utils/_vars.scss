@@ -1,0 +1,26 @@
+:root {
+  --main-text-font: roboto;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --button-hover-color: #188ce8;
+  --secondary-accent-color: #2f303a;
+  --white-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --header-border-color: #ececec;
+  --project-item-border: #eeeeee;
+  --hero-background-color: rgba(47, 48, 58, 1);
+  --hero-overlay-color: rgba(47, 48, 58, 0.4);
+
+  --social-links-main-color: #afb1b8;
+  --social-links-footer-background-color: rgba(255, 255, 255, 0.1);
+  --modal-overlay-color: rgba(0, 0, 0, 0.2);
+  --logo-font: raleway;
+  --main-transition-duration: 250ms;
+  --main-transtition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1200px;

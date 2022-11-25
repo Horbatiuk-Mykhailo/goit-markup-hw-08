@@ -1,0 +1,94 @@
+.contacts-list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  margin-top: auto;
+  list-style: none;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    margin-top: 10px;
+    flex-direction: column;
+    margin-left: auto;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  &__icon {
+    display: none;
+    margin-right: 10px;
+    fill: currentColor;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
+}
+
+.mail {
+  color: var(--secondary-text-color);
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transtition-timing-function);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: 0;
+  }
+}
+
+.telephone {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 1.17;
+
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  color: var(--accent-color);
+  transition-property: color;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transtition-timing-function);
+  text-decoration: none;
+
+  @media screen and (min-width: $phone) {
+    font-size: 34px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--secondary-text-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: 0;
+  }
+
+  // @media screen and(min-width:$tablet) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   margin-left: auto;
+  // }
+}
